@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build index.html --no-cache",
-    "start": "parcel index.html"
+    "build": "parcel build public/index.html --no-cache",
+    "start": "parcel public/index.html"
   },
   "keywords": [],
   "author": "Jarrod Van Doren",
