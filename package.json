@@ -6,7 +6,7 @@
   "scripts": {
     "build": "parcel build public/index.html --no-cache",
     "start": "parcel public/index.html",
-    "heroku-postbuild": "parcel build public/index.html"
+    "heroku-postbuild": "yarn run parcel build public/index.html"
   },
   "keywords": [],
   "author": "Jarrod Van Doren",
