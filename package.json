@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "parcel build public/index.html --no-cache",
-    "start": "node server.js",
-    "heroku-postbuild": "yarn run parcel build public/index.html"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Jarrod Van Doren",
