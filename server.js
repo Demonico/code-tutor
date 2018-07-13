@@ -1,13 +1,13 @@
 // Packages
 const Bundler = require('parcel-bundler')
 const express = require('express')
+const mongoose = require('mongoose')
 const path = require('path')
+
 // Bundler Config=
 const insertionFile = path.join(__dirname, 'client', 'index.html')
-const { devOpts, prodOpts } = require('./parcel-options')
 
 // Initialize a new bundler using a file and options
-const options = process.env.NODE_ENV !== 'production' ? devOpts : prodOpts
 const bundler = new Bundler(insertionFile, {})
 
 // Route Definitions
@@ -15,6 +15,8 @@ const indexRouter = require('./routes')
 
 // Port config
 const PORT = process.env.PORT || 3000
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/codetutor')
 
 // Initialize Express
 const app = express()
