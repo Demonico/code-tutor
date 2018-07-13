@@ -2,10 +2,10 @@
   "name": "code-tutor",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "parcel build public/index.html --no-cache",
-    "start": "parcel public/index.html",
+    "start": "node server.js",
     "heroku-postbuild": "yarn run parcel build public/index.html"
   },
   "keywords": [],
