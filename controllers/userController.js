@@ -18,7 +18,8 @@ module.exports = {
       lName: req.body.lName,
       email: req.body.email,
       classCode: req.body.classCode,
-      gitHub: req.body.gitHub
+      gitHub: req.body.gitHub,
+      userType: req.body.userType
     }
     db.User.create(user)
       .then(dbUser => res.json(dbUser))

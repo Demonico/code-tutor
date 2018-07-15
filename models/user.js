@@ -21,6 +21,10 @@ const userSchema = new Schema({
   gitHub: {
     type: String,
     required: true
+  },
+  userType: {
+    type: String,
+    required: true
   }
 })
 
